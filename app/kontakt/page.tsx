@@ -6,6 +6,8 @@ import { MapPin, Mail, Send, CheckCircle2 } from 'lucide-react'
 import SiteLayout from '@/components/site-layout'
 import { TOURS } from '@/lib/tours-data'
 
+export const dynamic = 'force-dynamic'
+
 export default function KontaktPage() {
   const searchParams = useSearchParams()
   const preselectedSlug = searchParams.get('zajezd') ?? ''

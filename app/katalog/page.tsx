@@ -6,6 +6,8 @@ import SiteLayout from '@/components/site-layout'
 import TourCard from '@/components/tour-card'
 import { TOURS, CATEGORY_LABELS, type TourCategory } from '@/lib/tours-data'
 
+export const dynamic = 'force-dynamic'
+
 const ALL_DIFFICULTIES = ['Lehká', 'Střední', 'Náročná', 'Extrémní']
 const ALL_CATEGORIES = Object.entries(CATEGORY_LABELS) as [TourCategory, string][]
 
