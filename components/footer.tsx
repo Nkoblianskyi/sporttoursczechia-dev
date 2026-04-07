@@ -21,11 +21,11 @@ export default function Footer() {
                 letterSpacing: '-0.02em',
               }}
             >
-              AVC
+              STC
             </span>
             {/* Two-line wordmark */}
             <span className="flex flex-col leading-none">
-              <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-white/40">Autorské výpravy</span>
+              <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-white/40">Sport Tours</span>
               <span className="font-serif text-lg font-bold tracking-[0.04em] text-white">Czechia</span>
             </span>
           </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
         style={{ borderColor: 'rgba(255,255,255,0.07)' }}
       >
         <p className="text-xs text-white/30 font-sans">
-          &copy; {new Date().getFullYear()} K.C. NTOMATA LIMITED — Autorské výpravy Czechia. Všechna práva vyhrazena.
+          &copy; {new Date().getFullYear()} K.C. NTOMATA LIMITED — Sport Tours Czechia. Všechna práva vyhrazena.
         </p>
         <div className="flex gap-5">
           <Link href="/soukromi" className="text-xs text-white/30 hover:text-white/60 transition-colors font-sans">

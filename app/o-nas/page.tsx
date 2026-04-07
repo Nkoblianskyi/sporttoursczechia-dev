@@ -5,8 +5,8 @@ import type { Metadata } from 'next'
 import SiteLayout from '@/components/site-layout'
 
 export const metadata: Metadata = {
-  title: 'O nás | Autorské výpravy Czechia',
-  description: 'Kdo stojí za Autorskými výpravami Czechia? Tým zkušených průvodců a dobrodruhů, kteří věří, že nejkrásnější způsob poznání krajiny je v pohybu.',
+  title: 'O nás | Sport Tours Czechia',
+  description: 'Kdo stojí za Sport Tours Czechia? Tým zkušených průvodců a dobrodruhů, kteří věří, že nejkrásnější způsob poznání krajiny je v pohybu.',
 }
 
 const VALUES = [
@@ -71,7 +71,7 @@ export default function AboutPage() {
               Ze společné vášně pro cestování a přírodu
             </h2>
             <p className="text-muted-foreground font-sans leading-relaxed">
-              Autorské výpravy Czechia vznikly z jednoduché myšlenky: nejkrásnější způsob poznání krajiny je v pohybu. Ať už na sedle kola v bohemských údolích, na motorce pod alpskými průsmyky, nebo pěšky po krkonošských hřebenech.
+              Sport Tours Czechia vznikl z jednoduché myšlenky: nejkrásnější způsob poznání krajiny je v pohybu. Ať už na sedle kola v bohemských údolích, na motorce pod alpskými průsmyky, nebo pěšky po krkonošských hřebenech.
             </p>
             <p className="text-muted-foreground font-sans leading-relaxed">
               Naši průvodci jsou lidé, kteří tráví v terénu velkou část života. Každou výpravu navrhujeme tak, jak bychom ji sami chtěli absolvovat: s pozorností k detailu, autentickým ubytováním a trasami daleko od turistických mas.

@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-hero border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group" aria-label="Autorské výpravy Czechia – domovská stránka">
+        <Link href="/" className="flex items-center gap-3 group" aria-label="Sport Tours Czechia – domovská stránka">
           {/* Monogram block */}
           <span
             className="font-serif font-black text-xl leading-none select-none"
@@ -29,11 +29,11 @@ export default function Navbar() {
               letterSpacing: '-0.02em',
             }}
           >
-            AVC
+            STC
           </span>
           {/* Wordmark — two-line stacked */}
           <span className="flex flex-col leading-none">
-            <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-white/40">Autorské výpravy</span>
+            <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-white/40">Sport Tours</span>
             <span className="font-serif text-base font-bold tracking-[0.04em] text-white">Czechia</span>
           </span>
         </Link>

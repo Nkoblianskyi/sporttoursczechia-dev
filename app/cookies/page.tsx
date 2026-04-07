@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import SiteLayout from '@/components/site-layout'
 
 export const metadata: Metadata = {
-  title: 'Zásady cookies | Autorské výpravy Czechia',
+  title: 'Zásady cookies | Sport Tours Czechia',
   description: 'Informace o používání souborů cookies na webu sporttoursczechia.com.',
 }
 
