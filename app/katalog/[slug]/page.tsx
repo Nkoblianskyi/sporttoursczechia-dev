@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tour = TOURS.find((t) => t.slug === slug)
   if (!tour) return {}
   return {
-    title: `${tour.title} | Sport Tours Czechia`,
+    title: `${tour.title} | Autorské výpravy Czechia`,
     description: tour.description,
   }
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Bike, Compass, Trophy, Mountain } from 'lucide-react'
+import { ArrowRight, Bike, Compass, Mountain } from 'lucide-react'
 import SiteLayout from '@/components/site-layout'
 import TourCard from '@/components/tour-card'
 import { TOURS, CATEGORY_LABELS } from '@/lib/tours-data'
@@ -10,15 +10,14 @@ const FEATURED_TOURS = TOURS.slice(0, 4)
 const CATEGORIES = [
   { icon: Bike, label: 'Cykloturistika', count: 3, href: '/katalog?kategorie=cyklo' },
   { icon: Compass, label: 'Moto výlety', count: 2, href: '/katalog?kategorie=moto' },
-  { icon: Trophy, label: 'Maratony', count: 1, href: '/katalog?kategorie=maraton' },
-  { icon: Mountain, label: 'Horské похід', count: 2, href: '/katalog?kategorie=hory' },
+  { icon: Mountain, label: 'Horské túry', count: 1, href: '/katalog?kategorie=hory' },
 ]
 
 const SAFETY_TIPS = [
   {
     number: '01',
     title: 'Fyzická příprava',
-    text: 'Každý zájezd má označenou obtížnost. Před odjezdem si zajistěte lékařský posudek a postupně zvyšujte fyzickou zátěž.',
+    text: 'Každá výprava má označenou obtížnost. Před odjezdem zhodnoťte svou kondici a postupně se připravujte — bez zbytečných risků.',
   },
   {
     number: '02',
@@ -28,7 +27,7 @@ const SAFETY_TIPS = [
   {
     number: '03',
     title: 'Pojištění na cestách',
-    text: 'Vždy uzavřete cestovní pojištění se sportovním krytím. Lékařská pomoc v zahraničí může být velmi nákladná.',
+    text: 'Vždy uzavřete cestovní pojištění odpovídající typu aktivity (kolo, moto, hory). Lékařská pomoc v zahraničí může být velmi nákladná.',
   },
   {
     number: '04',
@@ -50,7 +49,7 @@ const SAFETY_TIPS = [
 const FAQS = [
   {
     q: 'Jak probíhá rezervace zájezdu?',
-    a: 'Zájezd rezervujete přes kontaktní formulář nebo telefonicky. Po potvrzení dostanete zálohu fakturu a detailní informace o přípravě.',
+    a: 'Termín poptáte přes kontaktní formulář nebo telefonicky. Po potvrzení dostanete zálohovou fakturu a detailní informace k přípravě.',
   },
   {
     q: 'Jsou zájezdy vhodné pro začátečníky?',
@@ -81,7 +80,7 @@ export default function HomePage() {
       <section className="relative h-[85vh] min-h-[520px] flex items-end overflow-hidden" aria-label="Úvodní banner">
         <Image
           src="/images/hero-bg.jpg"
-          alt="Česká krajina – sportovní výpravy"
+          alt="Česká krajina – autorské výpravy"
           fill
           priority
           className="object-cover"
@@ -102,19 +101,19 @@ export default function HomePage() {
         >
           <div className="flex gap-12 animate-none">
             <p className="ornament whitespace-nowrap text-white/60 text-[10px]">
-              Cyklotury &nbsp;&bull;&nbsp; Moto výlety &nbsp;&bull;&nbsp; Maratony &nbsp;&bull;&nbsp; Horské expedice &nbsp;&bull;&nbsp; Trail running &nbsp;&bull;&nbsp; Česká republika &amp; Evropa
+              Cyklotury &nbsp;&bull;&nbsp; Moto výlety &nbsp;&bull;&nbsp; Horské túry &nbsp;&bull;&nbsp; Příroda &nbsp;&bull;&nbsp; Česká republika &amp; Evropa
             </p>
           </div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 pb-12 w-full">
-          <p className="ornament mb-3">Autorské sportovní zájezdy</p>
+          <p className="ornament mb-3">Autorské výpravy</p>
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-white text-balance leading-tight max-w-2xl">
             Prozkoumejte Evropu
             <span style={{ color: 'var(--gold)' }}> v pohybu</span>
           </h1>
           <p className="text-base md:text-lg text-white/60 font-sans mt-4 max-w-xl leading-relaxed">
-            Cykloturistika, moto výlety, maratony a horské poходи po České republice a celé Evropě. Bez mas, bez kompromisů.
+            Autorské cyklotury, moto výlety a horské túry po České republice a Evropě. Bez mas, bez kompromisů.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-8">
             <Link
@@ -122,7 +121,7 @@ export default function HomePage() {
               className="inline-flex items-center justify-center gap-2 px-6 py-3 font-sans text-sm tracking-widest uppercase font-medium transition-colors"
               style={{ backgroundColor: 'var(--gold)', color: 'var(--hero-bg)' }}
             >
-              Prohlédnout zájezdy <ArrowRight size={16} />
+              Prohlédnout výpravy <ArrowRight size={16} />
             </Link>
             <Link
               href="/o-nas"
@@ -162,7 +161,7 @@ export default function HomePage() {
             />
             <Image
               src="/images/about-team.jpg"
-              alt="Tým SportTours Czechia"
+              alt="Tým průvodců"
               width={600}
               height={420}
               className="relative z-10 object-cover w-full"
@@ -171,13 +170,13 @@ export default function HomePage() {
           <div className="flex flex-col gap-5">
             <p className="ornament">Kdo jsme</p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-balance">
-              Autorské zájezdy od vášnivých sportovců
+              Autorské výpravy od zkušených průvodců
             </h2>
             <p className="text-muted-foreground font-sans leading-relaxed">
-              Sport Tours Czechia vznikl ze společné vášně pro sport a cestování. Jsme tým průvodců, závodníků a dobrodruhů, kteří věří, že nejkrásnější způsob poznání krajiny je v pohybu – na kole, motorce, běžeckých botách nebo trekkingových holích.
+              Jsme tým průvodců a dobrodruhů, kteří věří, že nejkrásnější způsob poznání krajiny je v pohybu – na kole, na motorce nebo pěšky po horách.
             </p>
             <p className="text-muted-foreground font-sans leading-relaxed">
-              Každý náš zájezd je autorský – pečlivě proplánovaný, s ověřenými trasami a garantovanou bezpečností. Žádné anonymní skupinové zájezdy, žádné kompromisy. Pouze autentický zážitek z pohybu v přírodě.
+              Každá naše výprava je autorská – pečlivě proplánovaná, s ověřenými trasami a důrazem na bezpečnost. Žádné anonymní skupiny, žádné kompromisy. Jen autentický zážitek v přírodě.
             </p>
             <Link
               href="/o-nas"
@@ -223,7 +222,7 @@ export default function HomePage() {
           <div className="text-center mb-14">
             <p className="ornament mb-3" style={{ color: 'var(--gold)' }}>Bezpečnost na prvním místě</p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-white text-balance">
-              Rady pro bezpečné sportovní výlety
+              Rady pro bezpečné výpravy
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -5,8 +5,8 @@ import type { Metadata } from 'next'
 import SiteLayout from '@/components/site-layout'
 
 export const metadata: Metadata = {
-  title: 'O nás | Sport Tours Czechia',
-  description: 'Kdo stojí za Sport Tours Czechia? Tým vášnivých sportovců a průvodců, kteří věří, že nejkrásnější způsob poznání krajiny je v pohybu.',
+  title: 'O nás | Autorské výpravy Czechia',
+  description: 'Kdo stojí za Autorskými výpravami Czechia? Tým zkušených průvodců a dobrodruhů, kteří věří, že nejkrásnější způsob poznání krajiny je v pohybu.',
 }
 
 const VALUES = [
@@ -23,7 +23,7 @@ const VALUES = [
   {
     icon: Heart,
     title: 'Vášeň pro pohyb',
-    text: 'Jsme sportovci, závodníci a dobrodruzi. Věříme, že sport je nejkrásnější způsob, jak poznat sám sebe i svět kolem.',
+    text: 'Jsme průvodci a dobrodruzi. Věříme, že pohyb v přírodě je nejkrásnější způsob, jak poznat sám sebe i svět kolem.',
   },
   {
     icon: Users,
@@ -45,7 +45,7 @@ export default function AboutPage() {
           O nás
         </h1>
         <p className="text-white/50 font-sans mt-3 max-w-xl mx-auto px-4 text-sm leading-relaxed">
-          Jsme tým průvodců, závodníků a dobrodruhů spojených jednou vášní — pohybem v přírodě.
+          Jsme tým průvodců a dobrodruhů spojených jednou vášní — pohybem v přírodě.
         </p>
       </div>
 
@@ -59,7 +59,7 @@ export default function AboutPage() {
             />
             <Image
               src="/images/about-team.jpg"
-              alt="Tým Sport Tours Czechia"
+              alt="Tým průvodců"
               width={600}
               height={420}
               className="relative z-10 object-cover w-full"
@@ -68,13 +68,13 @@ export default function AboutPage() {
           <div className="flex flex-col gap-5">
             <p className="ornament">Jak to začalo</p>
             <h2 className="font-serif text-3xl font-bold text-foreground text-balance">
-              Ze společné vášně pro sport a cestování
+              Ze společné vášně pro cestování a přírodu
             </h2>
             <p className="text-muted-foreground font-sans leading-relaxed">
-              Sport Tours Czechia vznikl z jednoduché myšlenky: nejkrásnější způsob poznání krajiny je v pohybu. Ať už na sedle kola v bohemských údolích, na motorce pod alpskými průsmyky, nebo s trekkingovými holemi na krkonošských hřebenech.
+              Autorské výpravy Czechia vznikly z jednoduché myšlenky: nejkrásnější způsob poznání krajiny je v pohybu. Ať už na sedle kola v bohemských údolích, na motorce pod alpskými průsmyky, nebo pěšky po krkonošských hřebenech.
             </p>
             <p className="text-muted-foreground font-sans leading-relaxed">
-              Naši průvodci jsou sami aktivní sportovci — závodníci, ultramaratonci, horští vůdci. Každý zájezd navrhujeme tak, jak bychom ho sami chtěli absolvovat: s pozorností k detailu, autentickým ubytováním a trasami daleko od turistických mas.
+              Naši průvodci jsou lidé, kteří tráví v terénu velkou část života. Každou výpravu navrhujeme tak, jak bychom ji sami chtěli absolvovat: s pozorností k detailu, autentickým ubytováním a trasami daleko od turistických mas.
             </p>
             <p className="text-muted-foreground font-sans leading-relaxed">
               Působíme z České republiky a organizujeme výpravy jak po celé zemi, tak do srdce Evropy — od Alp přes Dolomity až po toskánské kopce.

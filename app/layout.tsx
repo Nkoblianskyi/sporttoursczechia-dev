@@ -15,17 +15,17 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Sport Tours Czechia – Cyklo, Moto, Maraton & Horské Výlety',
+  title: 'Autorské výpravy Czechia – Cyklo, Moto & Hory',
   description:
-    'Autorské sportovní zájezdy po České republice a celé Evropě. Cyklotury, motoristické výlety, maratony a horské походи. Rezervujte nyní na sporttoursczechia.com.',
-  keywords: 'sportovní zájezdy, cyklotury Česko, motoristické výlety Evropa, maratony, horské походи, sport tours',
-  authors: [{ name: 'Sport Tours Czechia' }],
+    'Autorské výpravy po České republice a Evropě. Cyklotury, moto výlety a horské túry v malých skupinách s průvodcem.',
+  keywords: 'autorské výpravy, autorské zájezdy, cyklotury Česko, moto výlety Evropa, horské túry, výpravy s průvodcem',
+  authors: [{ name: 'Autorské výpravy Czechia' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Sport Tours Czechia – Autorské Sportovní Zájezdy',
-    description: 'Cyklotury, moto výlety, maratony a горské походи po Čechách a Evropě.',
+    title: 'Autorské výpravy Czechia',
+    description: 'Cyklotury, moto výlety a horské túry po Čechách a Evropě v malých skupinách.',
     url: 'https://sporttoursczechia.com',
-    siteName: 'Sport Tours Czechia',
+    siteName: 'Autorské výpravy Czechia',
     locale: 'cs_CZ',
     type: 'website',
   },

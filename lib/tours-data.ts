@@ -1,5 +1,5 @@
-// Central tours data — no brand names, no stadium names, no club names
-export type TourCategory = 'cyklo' | 'moto' | 'maraton' | 'hory' | 'trail'
+// Central tours data — no brand names, no stadium names, no ticket sales
+export type TourCategory = 'cyklo' | 'moto' | 'hory'
 
 export interface Tour {
   id: string
@@ -68,28 +68,6 @@ export const TOURS: Tour[] = [
     highlights: ['Legendární horské průsmyky', 'Alpská jezera', 'Malebná středověká městečka', 'Panoramatické výhledy'],
   },
   {
-    id: '3',
-    slug: 'maraton-historickymi-mesty',
-    category: 'maraton',
-    title: 'Maraton historickými městy',
-    subtitle: 'Běžte přes dějiny Central Evropy',
-    description:
-      'Čtyřdenní výprava spojující přípravu a závod v historickém centru jednoho z nejstarších měst střední Evropy.',
-    fullDescription:
-      'Tento program je určen jak zkušeným maratonbegynníkům, tak i lidem, kteří si chtějí vychutnat atmosféru velkého závodu. Přijedete den před závodem, absolvujete společné rozcvičení a procházku dějišti, pak nastoupíte na start v historickém centru. Dlažební kostky, průchody pod gotickými branami a jásajícím dav vás poženou vpřed. Po závodě společné slavnostní zakončení s autentickým jídlem a pivem v starém sklepení.',
-    image: '/images/tour-marathon-prague.jpg',
-    duration: '4 dny / 3 noci',
-    difficulty: 'Střední',
-    dateFrom: '2026-09-12',
-    dateTo: '2026-09-15',
-    maxParticipants: 20,
-    country: 'Česká republika',
-    region: 'Praha',
-    included: ['Startovné', 'Ubytování v centru', 'Snídaně', 'Průvodce'],
-    notIncluded: ['Doprava do cíle', 'Osobní výbava', 'Obědy a večeře'],
-    highlights: ['Start v historickém centru', 'Trasa podél řeky', 'Slavnostní zakončení', 'Skupinové rozcvičení'],
-  },
-  {
     id: '4',
     slug: 'horsky-trekking-krkonose',
     category: 'hory',
@@ -156,28 +134,6 @@ export const TOURS: Tour[] = [
     highlights: ['Světoznámé dolomitské průsmyky', 'Italská horská kuchyně', 'Horská jezera', 'Skalní věže'],
   },
   {
-    id: '7',
-    slug: 'trail-run-jeseniky',
-    category: 'trail',
-    title: 'Trail running v Jeseníkách',
-    subtitle: 'Horský běh divokou moravskou přírodou',
-    description:
-      'Třídenní trail running výprava po nejkrásnějších hřebenech Jeseníků. Pro zkušené i začínající trailové běžce.',
-    fullDescription:
-      'Jeseníky jsou jedním z nejdivočejších pohoří Moravy a jejich divoké stezky jsou stvořeny pro trail running. Naše výprava kombinuje skupinové tréninky na technickém terénu s volnou sekcí, kde si každý zvolí tempo. Průvodce je zkušený závodník ultramaratonů, který vás naučí technice běhu v horách, výběru vybavení a výživě při delších výbězích. Program zahrnuje i relaxační večerní procedury po každém dni.',
-    image: '/images/tour-trail-run.jpg',
-    duration: '3 dny / 2 noci',
-    difficulty: 'Náročná',
-    dateFrom: '2026-06-05',
-    dateTo: '2026-06-07',
-    maxParticipants: 10,
-    country: 'Česká republika',
-    region: 'Jeseníky',
-    included: ['Průvodce ultramaratonec', 'Ubytování', 'Stravování', 'Technický trénink'],
-    notIncluded: ['Osobní běžecká výbava', 'Dopravu na místo'],
-    highlights: ['Technický horský terén', 'Trénink od profesionála', 'Divoká příroda', 'Relaxační procedury'],
-  },
-  {
     id: '8',
     slug: 'cyklo-toskana',
     category: 'cyklo',
@@ -204,9 +160,7 @@ export const TOURS: Tour[] = [
 export const CATEGORY_LABELS: Record<TourCategory, string> = {
   cyklo: 'Cykloturistika',
   moto: 'Moto výlety',
-  maraton: 'Maratony',
-  hory: 'Horské походи',
-  trail: 'Trail running',
+  hory: 'Horské túry',
 }
 
 export const DIFFICULTY_COLORS: Record<string, string> = {

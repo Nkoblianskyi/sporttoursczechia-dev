@@ -41,12 +41,12 @@ export default function KatalogPage() {
         className="py-16 text-center border-b border-border"
         style={{ backgroundColor: 'var(--section-dark)' }}
       >
-        <p className="ornament mb-3" style={{ color: 'var(--gold)' }}>Sportovní expedice</p>
+        <p className="ornament mb-3" style={{ color: 'var(--gold)' }}>Autorské výpravy</p>
         <h1 className="font-serif text-4xl md:text-5xl font-bold text-white text-balance">
           Katalog zájezdů
         </h1>
         <p className="text-white/50 font-sans mt-3 max-w-xl mx-auto px-4 text-sm leading-relaxed">
-          Vyberte si ze {TOURS.length} autorských sportovních zájezdů po České republice a Evropě.
+          Vyberte si ze {TOURS.length} autorských výprav po České republice a Evropě.
         </p>
       </div>
 

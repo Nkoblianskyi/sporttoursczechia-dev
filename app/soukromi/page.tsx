@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import SiteLayout from '@/components/site-layout'
 
 export const metadata: Metadata = {
-  title: 'Ochrana soukromí | Sport Tours Czechia',
-  description: 'Zásady ochrany osobních údajů společnosti K.C. NTOMATA LIMITED provozující Sport Tours Czechia.',
+  title: 'Ochrana soukromí | Autorské výpravy Czechia',
+  description: 'Zásady ochrany osobních údajů společnosti K.C. NTOMATA LIMITED provozující web sporttoursczechia.com.',
 }
 
 export default function SoukromiPage() {
